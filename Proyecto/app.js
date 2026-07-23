@@ -9,7 +9,7 @@ const tempValue = document.getElementById('temp-value');
 const weatherDesc = document.getElementById('weather-desc');
 
 // Backend en Render
-const API_URL = 'https://TU_URL_DE_RENDER.onrender.com/clima?ciudad=';
+const API_URL = 'https://proyecto-modulo-4-ad6f.onrender.com/clima?ciudad=';
 // Para uso local, descomenta la siguiente línea y comenta la de arriba
 //const API_URL = 'http://localhost:3000/clima?ciudad=';
 
