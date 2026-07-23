@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+
+.grid-container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.weather-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    
+    
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+input, button {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #0284c7;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0369a1;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0284c7;
+    margin: 0.5rem 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.error {
+    color: #dc2626;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto App del Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="grid-container">
+        <section class="weather-card">
+            <h1>Consulta el Clima</h1>
+            
+            <form id="weather-form">
+                <input type="text" id="city-input" placeholder="Ingresa una ciudad (ej. Puebla)" required>
+                <button type="submit">Buscar</button>
+            </form>
+
+            <!-- Este bloque está oculto por defecto hasta que haya datos -->
+            <div id="weather-result" class="hidden">
+                <h2 id="city-name"></h2>
+                <p class="temperature"><span id="temp-value"></span>°C</p>
+                <p id="weather-desc"></p>
+            </div>
+
+            <div id="error-message" class="hidden error"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
